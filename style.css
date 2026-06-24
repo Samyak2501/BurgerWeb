@@ -1788,7 +1788,6 @@ a.info-value:hover {
   font-size: clamp(2.2rem, 5.5vw, 3.5rem);
   letter-spacing: -0.5px;
   user-select: none;
-  animation: logoPulse 2s infinite ease-in-out;
 }
 
 .preloader-spinner {
@@ -1798,15 +1797,6 @@ a.info-value:hover {
   border-top-color: var(--color-gold);
   border-radius: 50%;
   animation: spin 1s infinite linear;
-}
-
-@keyframes logoPulse {
-  0%, 100% {
-    transform: scale(0.96);
-  }
-  50% {
-    transform: scale(1.04);
-  }
 }
 
 @keyframes spin {
