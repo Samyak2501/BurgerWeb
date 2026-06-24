@@ -504,12 +504,26 @@ body {
 }
 
 .burger-image {
-  max-width: 90%;
-  max-height: 90%;
-  object-fit: contain;
+  width: 90%;
+  height: 90%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
   transition: transform 0.1s ease;
   pointer-events: none;
+}
+
+.burger-img-1 {
+  background-image: url('./Burger1.png');
+}
+
+.burger-img-2 {
+  background-image: url('./Burger2.png');
+}
+
+.burger-img-3 {
+  background-image: url('./Burger3.png');
 }
 
 /* Realistic Ground Shadow underneath Burger */
