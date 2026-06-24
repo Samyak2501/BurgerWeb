@@ -495,6 +495,12 @@ body {
 
 .burger-active .burger-float-wrapper {
   animation: burgerFloat 4.5s infinite ease-in-out;
+  pointer-events: auto;
+  cursor: grab;
+}
+
+.burger-float-wrapper:active {
+  cursor: grabbing;
 }
 
 .burger-image {
@@ -502,13 +508,8 @@ body {
   max-height: 90%;
   object-fit: contain;
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
-  cursor: grab;
   transition: transform 0.1s ease;
-  pointer-events: auto;
-}
-
-.burger-image:active {
-  cursor: grabbing;
+  pointer-events: none;
 }
 
 /* Realistic Ground Shadow underneath Burger */

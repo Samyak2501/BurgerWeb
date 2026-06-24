@@ -328,14 +328,17 @@ window.addEventListener('keydown', (e) => {
 /* ==========================================================================
    3D Tilt Effect on Burger Hover (Subtle premium micro-interaction)
    ========================================================================== */
-const burgerImages = document.querySelectorAll('.burger-image');
-burgerImages.forEach(img => {
-  img.addEventListener('mousemove', (e) => {
-    // Only apply hover tilt to the active burger
-    const parentSlide = img.closest('.burger-slide');
-    if (!parentSlide.classList.contains('burger-active')) return;
+const burgerWrappers = document.querySelectorAll('.burger-float-wrapper');
+burgerWrappers.forEach(wrapper => {
+  const img = wrapper.querySelector('.burger-image');
+  if (!img) return;
 
-    const rect = img.getBoundingClientRect();
+  wrapper.addEventListener('mousemove', (e) => {
+    // Only apply hover tilt to the active burger
+    const parentSlide = wrapper.closest('.burger-slide');
+    if (!parentSlide || !parentSlide.classList.contains('burger-active')) return;
+
+    const rect = wrapper.getBoundingClientRect();
     const x = e.clientX - rect.left - (rect.width / 2);
     const y = e.clientY - rect.top - (rect.height / 2);
     
@@ -350,7 +353,7 @@ burgerImages.forEach(img => {
     });
   });
 
-  img.addEventListener('mouseleave', () => {
+  wrapper.addEventListener('mouseleave', () => {
     gsap.to(img, {
       transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)',
       duration: 0.3,
