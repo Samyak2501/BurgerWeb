@@ -472,3 +472,26 @@ document.addEventListener('DOMContentLoaded', () => {
 if (document.readyState === 'interactive' || document.readyState === 'complete') {
   initTestimonialSlider();
 }
+
+// Preloader Controller
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  if (!preloader) return;
+
+  // Enforce a minimum display time of 2 seconds for visual continuity and smooth loading experience
+  const minLoadingTime = 2000;
+  const timeSpent = performance.now();
+  const delay = Math.max(0, minLoadingTime - timeSpent);
+
+  setTimeout(() => {
+    gsap.to(preloader, {
+      opacity: 0,
+      scale: 1.08,
+      duration: 0.6,
+      ease: "power2.inOut",
+      onComplete: () => {
+        preloader.style.display = 'none';
+      }
+    });
+  }, delay);
+});
