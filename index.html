@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Bing | Premium Gourmet Burgers</title>
+  <meta name="description"
+    content="Indulge in award-winning gourmet burgers at Burger Bing. Taste the premium craftsmanship with every bite, crafted from fresh, local ingredients.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Outfit:wght@300;400;600;700;900&display=swap"
+    rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+  <!-- Favicon / Tab Logo -->
+  <link rel="icon" type="image/png" href="/logo.png">
+</head>
+
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo-bold">BURGER</span><span class="logo-light">BING</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#menu" class="nav-link active">Menu</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#delivery" class="nav-link">Testimonial</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-btn" aria-label="Search">
+        <i data-lucide="search"></i>
+      </button>
+      <button class="icon-btn cart-btn" aria-label="Cart">
+        <i data-lucide="shopping-bag"></i>
+        <span class="cart-count">2</span>
+      </button>
+      <button class="order-btn-nav">Order Now</button>
+    </div>
+  </header>
+
+  <!-- Fullscreen Page Slider -->
+  <div id="main-wrapper">
+    <div class="page-slider">
+
+      <!-- Main Scroll Container -->
+      <main class="scroll-container">
+
+        <!-- Pinned Screen Section -->
+        <section class="pinned-section">
+
+          <!-- Split Background Color panel (Right side) -->
+          <div class="split-bg">
+            <div class="split-bg-left"></div>
+            <div class="split-bg-right"></div>
+          </div>
+
+
+          <!-- Burger Images Slider Outer Container (Moved to direct child of pinned-section for full-width positioning) -->
+          <div class="burgers-slider">
+            <!-- Burger 1 -->
+            <div class="burger-slide burger-active" data-slide="1">
+              <div class="burger-float-wrapper">
+                <img src="/Burger1.png" alt="The Double Decker Premium Burger" class="burger-image">
+              </div>
+              <div class="burger-shadow"></div>
+            </div>
+            <!-- Burger 2 -->
+            <div class="burger-slide burger-next" data-slide="2">
+              <div class="burger-float-wrapper">
+                <img src="/Burger2.png" alt="Truffle Swiss Mushroom Burger" class="burger-image">
+              </div>
+              <div class="burger-shadow"></div>
+            </div>
+            <!-- Burger 3 -->
+            <div class="burger-slide burger-hidden" data-slide="3">
+              <div class="burger-float-wrapper">
+                <img src="/Burger3.png" alt="Spicy Avocado Crunch Burger" class="burger-image">
+              </div>
+              <div class="burger-shadow"></div>
+            </div>
+          </div>
+
+          <!-- Left Panel: Text Content -->
+          <div class="content-panel">
+
+            <!-- Text Group for Burger 1 -->
+            <div class="burger-text-group active" data-burger="1">
+              <div class="tag-row">
+                <span class="tag tag-new">NEW RECIPE</span>
+                <div class="rating">
+                  <span class="stars"><i data-lucide="star" class="fill-star"></i><i data-lucide="star"
+                      class="fill-star"></i><i data-lucide="star" class="fill-star"></i><i data-lucide="star"
+                      class="fill-star"></i><i data-lucide="star" class="fill-star"></i></span>
+                  <span class="rating-text">4.9 (1.2k reviews)</span>
+                </div>
+              </div>
+
+              <h1 class="burger-title">CLASSIC CRUNCH<br>SUPREME</h1>
+
+              <div class="spice-level">
+                <span class="spice-label">Spiciness:</span>
+                <span class="chili-icons">
+                  <i data-lucide="flame" class="chili active"></i>
+                  <i data-lucide="flame" class="chili active"></i>
+                  <i data-lucide="flame" class="chili active"></i>
+                  <i data-lucide="flame" class="chili"></i>
+                  <i data-lucide="flame" class="chili"></i>
+                </span>
+                <span class="spice-text">Medium Spicy</span>
+              </div>
+
+              <p class="burger-description">
+                A golden veggie patty layered with crisp lettuce, fresh tomatoes, red onions, tangy pickles, and melted
+                cheddar, finished with a rich blend of creamy mayo and zesty house sauce on a toasted sesame bun.
+              </p>
+
+
+
+              <div class="action-row">
+                <button class="primary-order-btn">
+                  <span>ORDER NOW</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+                <div class="price-container">
+                  <span class="price-current">₹99</span>
+                  <span class="price-old">₹129</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Text Group for Burger 2 -->
+            <div class="burger-text-group" data-burger="2">
+              <div class="tag-row">
+                <span class="tag tag-special">CHEF'S SPECIAL</span>
+                <div class="rating">
+                  <span class="stars"><i data-lucide="star" class="fill-star"></i><i data-lucide="star"
+                      class="fill-star"></i><i data-lucide="star" class="fill-star"></i><i data-lucide="star"
+                      class="fill-star"></i><i data-lucide="star" class="fill-star"></i></span>
+                  <span class="rating-text">4.8 (940 reviews)</span>
+                </div>
+              </div>
+
+              <h1 class="burger-title">DOUBLE HARVEST STACK</h1>
+
+              <div class="spice-level">
+                <span class="spice-label">Spiciness:</span>
+                <span class="chili-icons">
+                  <i data-lucide="flame" class="chili active"></i>
+                  <i data-lucide="flame" class="chili"></i>
+                  <i data-lucide="flame" class="chili"></i>
+                  <i data-lucide="flame" class="chili"></i>
+                  <i data-lucide="flame" class="chili"></i>
+                </span>
+                <span class="spice-text">Mild & Savory</span>
+              </div>
+
+              <p class="burger-description">
+                Two hearty vegetable patties stacked with melted cheese, crunchy pickles, garden-fresh lettuce, juicy
+                tomatoes, and a drizzle of creamy signature dressing, creating a bold and satisfying veggie feast.
+              </p>
+
+
+
+              <div class="action-row">
+                <button class="primary-order-btn">
+                  <span>ORDER NOW</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+                <div class="price-container">
+                  <span class="price-current">₹239</span>
+                  <span class="price-old">₹289</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Text Group for Burger 3 -->
+            <div class="burger-text-group" data-burger="3">
+              <div class="tag-row">
+                <span class="tag tag-spicy">FIERY HOT</span>
+                <div class="rating">
+                  <span class="stars"><i data-lucide="star" class="fill-star"></i><i data-lucide="star"
+                      class="fill-star"></i><i data-lucide="star" class="fill-star"></i><i data-lucide="star"
+                      class="fill-star"></i><i data-lucide="star" class="fill-star-half"></i></span>
+                  <span class="rating-text">4.7 (750 reviews)</span>
+                </div>
+              </div>
+
+              <h1 class="burger-title">SPICY PANEER FUSION</h1>
+
+              <div class="spice-level">
+                <span class="spice-label">Spiciness:</span>
+                <span class="chili-icons">
+                  <i data-lucide="flame" class="chili active"></i>
+                  <i data-lucide="flame" class="chili active"></i>
+                  <i data-lucide="flame" class="chili active"></i>
+                  <i data-lucide="flame" class="chili active"></i>
+                  <i data-lucide="flame" class="chili active"></i>
+                </span>
+                <span class="spice-text">Extremely Spicy</span>
+              </div>
+
+              <p class="burger-description">
+                Thick flame-grilled paneer topped with molten mozzarella, sautéed capsicum, caramelized onions, fresh
+                lettuce, and a extremely spiced creamy sauce, served on a perfectly toasted sesame bun for a rich,
+                indulgent
+                bite.
+              </p>
+
+
+
+              <div class="action-row">
+                <button class="primary-order-btn">
+                  <span>ORDER NOW</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+                <div class="price-container">
+                  <span class="price-current">₹225</span>
+                  <span class="price-old">₹255</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Panel: Visual Area & Floating Elements -->
+          <div class="visual-panel">
+
+            <!-- Dynamic background decoration elements -->
+            <div class="decorations">
+              <div class="decor-circle decor-orange"></div>
+              <div class="decor-circle decor-red"></div>
+            </div>
+          </div>
+
+
+
+
+      </main>
+
+      <!-- Why Choose Us Section -->
+      <section id="why-choose-us">
+        <h2 class="section-title">WHY CHOOSE US?</h2>
+        <div class="cards-grid">
+
+          <!-- Card 1: Freshly Prepared Patty -->
+          <div class="choose-card">
+            <img src="/cooking.png" alt="Freshly Hand-Prepared Patty" class="choose-card-img">
+            <div class="choose-card-overlay"></div>
+            <div class="choose-card-content">
+              <h3 class="choose-card-title">FRESHLY PREPARED PATTY</h3>
+              <p class="choose-card-desc">Savor the premium taste of our hand-crafted, fresh patties, seasoned and
+                grilled to lock in rich, smoky flavors.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: House-Made Sauces -->
+          <div class="choose-card">
+            <img src="/sause.png" alt="House-Made Sauces" class="choose-card-img">
+            <div class="choose-card-overlay"></div>
+            <div class="choose-card-content">
+              <h3 class="choose-card-title">HOUSE-MADE SAUCES</h3>
+              <p class="choose-card-desc">Custom signature blends and zesty secret sauces, whipped fresh daily to add a
+                burst of flavor to every bite.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Fast & Reliable Delivery -->
+          <div class="choose-card">
+            <img src="/delivery.png" alt="Fast & Reliable Delivery" class="choose-card-img">
+            <div class="choose-card-overlay"></div>
+            <div class="choose-card-content">
+              <h3 class="choose-card-title">FAST & RELIABLE DELIVERY</h3>
+              <p class="choose-card-desc">From our hot kitchen grills straight to your doorstep. Fast, fresh, and
+                reliable delivery, every single time.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Ingredient Transparency -->
+          <div class="choose-card">
+            <img src="/Ingridients.png" alt="Ingredient Transparency" class="choose-card-img">
+            <div class="choose-card-overlay"></div>
+            <div class="choose-card-content">
+              <h3 class="choose-card-title">INGREDIENT TRANSPARENCY</h3>
+              <p class="choose-card-desc">We believe in wholesome quality. 100% fresh, locally sourced vegetarian
+                ingredients with absolutely zero compromise.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials">
+        <h2 class="section-title">TESTIMONIAL</h2>
+        <div class="testimonials-quote">"PEOPLE DON'T WHISPER ABOUT GOOD FOOD - THEY TALK"</div>
+
+        <div class="testimonials-slider-container">
+          <button class="slider-arrow prev-btn" aria-label="Previous review" disabled>
+            <i data-lucide="chevron-left"></i>
+          </button>
+
+          <div class="testimonials-viewport">
+            <div class="testimonials-track">
+              <!-- Card 1 -->
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="stars">
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                  </div>
+                  <p class="testimonial-text">"The Classic Crunch Supreme is by far the best burger I've had in years!
+                    The crunch is real, and the ingredients are fresh."</p>
+                  <div class="testimonial-user">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #ffb81c, #e06014);">SJ</div>
+                    <div class="user-info">
+                      <h4 class="user-name">Sarah Jenkins</h4>
+                      <span class="user-tag">Local Guide</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="stars">
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star-half" class="fill-star"></i>
+                  </div>
+                  <p class="testimonial-text">"I love there 100% vegetarian ingredients. The Smoky Veg
+                    Decker is full of rich, smoky flavors."</p>
+                  <div class="testimonial-user">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #e06014, #8b263e);">DK</div>
+                    <div class="user-info">
+                      <h4 class="user-name">David K.</h4>
+                      <span class="user-tag">Veg Advocate</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="stars">
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star"></i>
+                  </div>
+                  <p class="testimonial-text">"Their house-made sauces are pure gold! That garlic aioli and secret sauce
+                    blend is something I dream about."</p>
+                  <div class="testimonial-user">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #8b263e, #ffb81c);">ER</div>
+                    <div class="user-info">
+                      <h4 class="user-name">Elena R.</h4>
+                      <span class="user-tag">Food Blogger</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="stars">
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                  </div>
+                  <p class="testimonial-text">"Super fast delivery! The burger arrived piping hot, wrapped perfectly,
+                    and tasted like it was fresh off the grill."</p>
+                  <div class="testimonial-user">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #ffb81c, #8b263e);">MC</div>
+                    <div class="user-info">
+                      <h4 class="user-name">Marcus Chen</h4>
+                      <span class="user-tag">Busy Professional</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="stars">
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star-half" class="fill-star"></i>
+                  </div>
+                  <p class="testimonial-text">"The Spicy Paneer Fusion is a masterpiece. The flame-grilled paneer pairs
+                    beautifully with the capsicum."</p>
+                  <div class="testimonial-user">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #e06014, #ffb81c);">AP</div>
+                    <div class="user-info">
+                      <h4 class="user-name">Aisha Patel</h4>
+                      <span class="user-tag">Gourmet Enthusiast</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="stars">
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star"></i>
+                  </div>
+                  <p class="testimonial-text">"Burger Bing has ruined all other burgers for me. The attention to texture
+                    and quality of ingredients is unmatched."</p>
+                  <div class="testimonial-user">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #8b263e, #e06014);">TH</div>
+                    <div class="user-info">
+                      <h4 class="user-name">Tom Harris</h4>
+                      <span class="user-tag">Burger Lover</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 7 -->
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="stars">
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                    <i data-lucide="star" class="fill-star"></i>
+                  </div>
+                  <p class="testimonial-text">"Outstanding service and even better food. The Spicy Paneer Fusion is
+                    spicy, creamy, and crunchy all in one!"</p>
+                  <div class="testimonial-user">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #ffb81c, #e06014);">SM</div>
+                    <div class="user-info">
+                      <h4 class="user-name">Sophia Martinez</h4>
+                      <span class="user-tag">Culinary Student</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="slider-arrow next-btn" aria-label="Next review">
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="testimonials-dots"></div>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section id="contact">
+        <div class="contact-wrapper">
+          <div class="contact-bun-container">
+            <img src="/Bun.png" alt="Gourmet Burger Bun" class="contact-bun-img">
+            <h2 class="contact-title">CONTACT US</h2>
+          </div>
+          <div class="contact-info">
+            <div class="contact-grid">
+
+              <!-- Column 1: Locations -->
+              <div class="contact-col">
+                <h3 class="info-group-title">OUR LOCATIONS</h3>
+                <div class="info-group-items">
+                  <div class="info-item">
+                    <span class="info-label">Gourmet Hub (HQ)</span>
+                    <span class="info-value">12, Gourmet Blvd, Indiranagar, Bangalore</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Downtown Outlet</span>
+                    <span class="info-value">45, Foodie Street, MG Road, Bangalore</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Tech Oasis Express</span>
+                    <span class="info-value">Tech Oasis Food Court, Whitefield, Bangalore</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 2: Hotlines & Emails -->
+              <div class="contact-col">
+                <h3 class="info-group-title">CUSTOMER HELP</h3>
+                <div class="info-group-items">
+                  <div class="info-item">
+                    <span class="info-label">Order Hotline</span>
+                    <a href="tel:+919876543210" class="info-value">011-24050336</a>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Table Reservations</span>
+                    <a href="tel:+919876543211" class="info-value">011-24050337</a>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">General Support</span>
+                    <a href="mailto:hello@burgerbing.com" class="info-value">hello@burgerbing.com</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 3: Corporate Opportunities -->
+              <div class="contact-col">
+                <h3 class="info-group-title">WORK WITH US</h3>
+                <div class="info-group-items">
+                  <div class="info-item">
+                    <span class="info-label">Catering & Events</span>
+                    <a href="mailto:events@burgerbing.com" class="info-value">events@burgerbing.com</a>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Franchise & Leasing</span>
+                    <a href="mailto:franchise@burgerbing.com" class="info-value">franchise@burgerbing.com</a>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Join Our Team</span>
+                    <a href="mailto:joinourteam@burgerbing.com" class="info-value">careers@burgerbing.com</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- GSAP Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Application JS -->
+  <script src="/app.js"></script>
+</body>
+
+</html>
