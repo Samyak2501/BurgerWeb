@@ -1784,9 +1784,10 @@ a.info-value:hover {
 }
 
 .preloader-logo {
-  width: clamp(100px, 18vw, 150px);
-  height: clamp(100px, 18vw, 150px);
-  object-fit: contain;
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5.5vw, 3.5rem);
+  letter-spacing: -0.5px;
+  user-select: none;
   animation: logoPulse 2s infinite ease-in-out;
 }
 
